@@ -19,6 +19,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.0",
+    "rateyo": "^2.3.2",
     "sass": "^1.39.0"
   },
   "dependencies": {
