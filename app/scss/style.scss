@@ -495,6 +495,64 @@
       margin: 0 auto;
   }
   
+  .promo{
+      background-image: url(../images/promo-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      padding: 150px 0 160px;
+      text-align: center;
+      &__inner{
+          max-width: 570px;
+          width: 100%;
+          margin-left: auto;
+      }
+      &__subtitle{
+          font-size: 22px;
+          color: $accent;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+      }
+      &__clock{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+      }
+      &__clock-item{
+          background-color: #fff;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          span{
+              font-size: 48px;
+              @extend %roboto-700;
+              color: $title;
+              margin: 10px 0 7px;
+          }
+      }
+      &__link{
+        text-transform: uppercase;
+        color: $title;
+        display: inline-block;
+        border: 1px solid $accent;
+        padding: 15px 25px;
+        margin-top: 55px;
+      }
+  }
+
+  .partners{
+      padding-top: 75px;
+      &__list{
+          height: 170px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+  }
+  
 
   
 
