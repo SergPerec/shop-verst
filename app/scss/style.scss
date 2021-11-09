@@ -704,9 +704,39 @@
         color: $accent;
       }
   }
+  .page-404{
+      padding: 110px 0 120px;
+      &__content{
+          max-width: 570px;
+          width: 100%;
+      }
+      &__inner{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      &__title{
+          font-size: 48px;
+          @extend %roboto-700;
+          margin-bottom: 40px;
+          color: #28384f;
+      }
+      &__text{
+          margin-bottom: 50px;
+          max-width: 470px;
+      }
+      &__link{
+          padding: 15px 30px;
+          background-color: $accent;
+          color: #fff;
+          box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.35);
+          @extend %roboto-400;
+          text-transform: uppercase;
+      }
+  }
 
 
-  
+    
   
 
   
