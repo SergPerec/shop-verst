@@ -10,10 +10,14 @@
     &__inner{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
 .menu{
+    &__btn{
+        display: none;
+    }
     &__list{
         display: flex;
     }
@@ -29,6 +33,7 @@
             color: $accent;
             border-bottom: 1px solid $accent;
             @extend %roboto-700;
+            background-color: #f6f6f6;
         }
     }
     &__list-link--active{
@@ -140,11 +145,12 @@
     }
 }
 .footer-bottom{
-    height: 75px;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
+    flex-wrap: wrap;
     &__accept-img{
         display: inline;
         margin-left: 25px;
@@ -171,7 +177,7 @@
     background-color: $bg;
     padding: 65px 0 45px;
     &__container{
-        max-width: 1520px;
+        max-width: 1420px;
     }
     &__content{
         padding-left: 155px;
@@ -241,6 +247,7 @@
 }
 
 .categories-info{
+    overflow-x: hidden;
     padding: 120px 0;
     background-image: url(../images/decor/categories-left-bg.png);
     background-repeat: no-repeat;
@@ -802,6 +809,7 @@
           @extend %roboto-700;
           margin-bottom: 40px;
           color: #28384f;
+          line-height: 52px;
       }
       &__text{
           margin-bottom: 50px;
@@ -1966,6 +1974,8 @@ width: 370px;
         @extend %btn;
     }
 }
+
+
 
 @import 'media'
 
